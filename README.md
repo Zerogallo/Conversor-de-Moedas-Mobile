@@ -5,7 +5,7 @@
 
 ### *Conversor de Moedas - React Native App*  
 
-*Descrição*  
+
 Aplicativo móvel para conversão de valores entre moedas internacionais (USD, BRL, EUR, GBP, JPY, CAD, AUD, CHF). Exibe resultados em tempo real com taxa de câmbio atualizada.
 
 ---
