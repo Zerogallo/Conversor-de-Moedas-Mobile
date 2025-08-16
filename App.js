@@ -1,15 +1,10 @@
-import { KeyboardAvoidingView, ScrollView, View } from "react-native";
-
-import Home from "./src/pages/Home";
+import { NavigationContainer } from "@react-navigation/native";
+import { RootStack } from "./src/routes/route";
 
 export default function App() {
   return (
-    <KeyboardAvoidingView>
-      <ScrollView>
-        <View>
-          <Home />
-        </View>
-      </ScrollView>
-    </KeyboardAvoidingView>
+    <NavigationContainer>
+      <RootStack />
+    </NavigationContainer>
   );
 }

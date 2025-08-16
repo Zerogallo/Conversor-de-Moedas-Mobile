@@ -79,6 +79,7 @@ export default function Home() {
             <View style={styles.currencyGrid}>
               {currencies.map((currency) => (
                 <Button
+                  label={currency.code}
                   variant="primary"
                   key={currency.code}
                   currency={currency}
@@ -102,6 +103,7 @@ export default function Home() {
               <View style={styles.currencyGrid}>
                 {currencies.map((currency) => (
                   <Button
+                    label={currency.code}
                     variant="secondary"
                     key={currency.code}
                     currency={currency}
