@@ -20,6 +20,7 @@ import { exchangeRateApi } from "../../services/api";
 import { useState } from "react";
 import { covertCurrency } from "../../utils/covertCurrency";
 import { styles } from "./styles";
+import { Ionicons } from "@expo/vector-icons";
 
 export default function Home() {
   const [amount, setAmount] = useState("");
@@ -85,20 +86,26 @@ export default function Home() {
                   currency={currency}
                   onPress={() => setFromCurrency(currency.code)}
                   isSelected={fromCurrency === currency.code}
+                  img={currency.img}
                 ></Button>
               ))}
             </View>
 
-            <View>
+            <View style={styles.boxswap}>
               <Input label={"Valor:"} value={amount} onChangeText={setAmount} />
 
               <TouchableOpacity
                 style={styles.swapButton}
                 onPress={swapCurrency}
               >
-                <Text style={styles.swapButtonText}>↑↓</Text>
+                <Ionicons
+                  name="swap-vertical-outline"
+                  style={styles.swapButtonText}
+                />
               </TouchableOpacity>
+            </View>
 
+            <View>
               <Text style={styles.label}>Para:</Text>
               <View style={styles.currencyGrid}>
                 {currencies.map((currency) => (
@@ -109,6 +116,7 @@ export default function Home() {
                     currency={currency}
                     onPress={() => setToCurrency(currency.code)}
                     isSelected={toCurrency === currency.code}
+                    img={currency.img}
                   ></Button>
                 ))}
               </View>

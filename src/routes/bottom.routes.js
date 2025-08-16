@@ -9,11 +9,14 @@ const Tab = createBottomTabNavigator();
 export function MyTabs() {
   return (
     <Tab.Navigator
-      screenOptions={{ headerShown: false }}
-      initialRouteName="Home"
+      screenOptions={{
+        headerShown: false,
+        tabBarStyle: { backgroundColor: colors.inputBackground },
+      }}
+      initialRouteName="Conversor"
     >
       <Tab.Screen
-        name="Home"
+        name="Conversor"
         component={Home}
         options={{
           tabBarIcon: ({ focused }) => (
@@ -25,7 +28,16 @@ export function MyTabs() {
           tabBarLabelStyle: {
             fontSize: 16,
             fontWeight: "bold",
+            top: -50,
+
             color: colors.background,
+          },
+          tabBarIconStyle: {
+            top: -20,
+            backgroundColor: colors.primary,
+            borderRadius: "50%",
+            width: 80,
+            height: 80,
           },
         }}
       />
@@ -42,7 +54,16 @@ export function MyTabs() {
           tabBarLabelStyle: {
             fontSize: 16,
             fontWeight: "bold",
+            top: -50,
+
             color: colors.background,
+          },
+          tabBarIconStyle: {
+            top: -20,
+            backgroundColor: colors.primary,
+            borderRadius: "50%",
+            width: 80,
+            height: 80,
           },
         }}
       />

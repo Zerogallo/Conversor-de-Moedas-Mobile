@@ -25,7 +25,7 @@ export function Button({
       <View style={styles.boxButton}>
         <Text style={styles.buttonText}>{label}</Text>
         <Ionicons name={icon} style={styles.icon}></Ionicons>
-        <Image source={img} />
+        <Image source={img} style={styles.boxImg} />
       </View>
     </TouchableOpacity>
   );

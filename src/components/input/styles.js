@@ -17,5 +17,6 @@ export const styles = StyleSheet.create({
     fontWeight: "bold",
     padding: 16,
     borderRadius: 8,
+    width: 300,
   },
 });

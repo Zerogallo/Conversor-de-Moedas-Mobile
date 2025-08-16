@@ -14,14 +14,15 @@ export const styles = StyleSheet.create({
   content: {
     flex: 1,
     paddingHorizontal: 24,
-    padding: 80,
+    padding: 20,
     paddingBottom: 24,
   },
   header: {
-    marginBottom: 32,
+    marginBottom: 12,
+    flexDirection: "row",
   },
   title: {
-    fontSize: 32,
+    fontSize: 22,
     fontWeight: "bold",
     color: colors.text,
     marginBottom: 8,
@@ -49,12 +50,19 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  boxswap: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "center",
+  },
   swapButton: {
     backgroundColor: colors.inputBackground,
-    paddingVertical: 16,
+    paddingVertical: 20,
     paddingHorizontal: 24,
     borderRadius: 12,
     marginBottom: 24,
+    margin: 20,
+    top: 8,
   },
   swapButtonText: {
     color: "#fff",
@@ -73,8 +81,8 @@ export const styles = StyleSheet.create({
     backgroundColor: colors.disabled,
   },
   img: {
-    width: 150,
-    height: 150,
+    width: 100,
+    height: 100,
     borderRadius: 12,
   },
   caixaImg: {

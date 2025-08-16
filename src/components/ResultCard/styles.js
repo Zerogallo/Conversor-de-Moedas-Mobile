@@ -17,9 +17,17 @@ export const styles = StyleSheet.create({
     fontWeight: "bold",
     color: colors.text,
     marginBottom: 14,
+    margin: 20,
   },
   rate: {
     color: colors.textsecondary,
     fontSize: 14,
+  },
+  boximg: {
+    width: 50,
+    height: 50,
+  },
+  botText: {
+    flexDirection: "row",
   },
 });
