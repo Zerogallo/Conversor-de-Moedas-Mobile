@@ -1,5 +1,10 @@
 export const currencies = [
-  { code: "USD", name: "Dólar Americano", symbol: "$" },
+  {
+    code: "USD",
+    name: "Dólar Americano",
+    symbol: "$",
+    img: require("../img/galeria/dolar.png"),
+  },
   {
     code: "BRL",
     name: "Real Brasileiro",
@@ -18,7 +23,12 @@ export const currencies = [
     symbol: "£",
     img: require("../img/galeria/libra-esterlina (2).png"),
   },
-  { code: "JPY", name: "Iene Japonês", symbol: "¥" },
+  {
+    code: "JPY",
+    name: "Iene Japonês",
+    symbol: "¥",
+    img: require("../img/galeria/moeda-iene-japonesa.png"),
+  },
   {
     code: "CAD",
     name: "Dólar Canadense",
