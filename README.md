@@ -1,6 +1,8 @@
 
 <div align="center">
  <img src="https://github.com/Zerogallo/Conversor-de-Moedas-Mobile/blob/main/WhatsApp%20Image%202025-08-06%20at%2016.45.53.jpeg" style="width: 200px; height: 600px;"/>
+ 
+ <img src="https://github.com/Zerogallo/Conversor-de-Moedas-Mobile/blob/main/WhatsApp%20Image%202025-08-18%20at%2017.52.36.jpeg" style="width: 200px; height: 600px;"/>
 </div>
 
 ### *Conversor de Moedas - React Native App*  
